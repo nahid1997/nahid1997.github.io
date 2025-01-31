@@ -10,10 +10,30 @@ nav {
     background-colour: #007bff;
     padding: 10px 20px;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    colour: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s, tansform 0.3s;
 }
 
 nav a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
     text-decoration: underline;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 h1 {
