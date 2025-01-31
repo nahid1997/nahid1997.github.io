@@ -1,105 +1,95 @@
+/* Global Styles */
 body {
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF); /* Modern gradient */
+    color: #EAEAEA; /* Soft white text */
+    font-family: 'Poppins', sans-serif; /* More modern font */
     margin: 0;
     padding: 0;
 }
 
+/* Navigation Bar */
 nav {
-    background-color: #007bff;
-    padding: 10px 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+    background-color: #1B1B2F; /* Dark navy blue */
     padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 4px;
-    margin: 0 10px;
-    display: inline-block;
-    transition: background-color 0.3s, tansform 0.3s;
-}
-
-nav a:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-    text-decoration: underline;
-}
-
-nav {
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
+nav a {
+    color: #EAEAEA;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #4CA1AF; /* Lighter blue */
+    transform: scale(1.1);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Headings */
 h1 {
-    color: #333;
-    font-size: 36px;
+    color: #F8F9FA; /* Soft white */
+    font-size: 40px;
     text-align: center;
     margin-top: 20px;
 }
 
+h2 {
+    color: #EAEAEA;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Paragraphs */
 p {
     font-size: 18px;
-    line-height: 1.6;
-    margin: 20px 0;
+    line-height: 1.8;
+    margin: 20px;
+    text-align: center;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
+/* Buttons */
 button {
-    background-color: #28a745;
+    background-color: #20C997; /* Teal */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-botton:hover {
-    background-color: #218838;
+button:hover {
+    background-color: #1A9D82; /* Darker teal */
+    transform: scale(1.05);
 }
 
-nav {
-    background-color: #007bff;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-body {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: white;
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    nav {
-        text-align: left
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-}
-
+/* Contact Section */
 #contact {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #1B1B2F; /* Dark navy background */
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #contact h2 {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #20C997; /* Teal */
 }
 
 form {
@@ -112,25 +102,63 @@ form {
 label {
     margin-bottom: 8px;
     font-size: 16px;
+    color: #EAEAEA;
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #007bff;
+    border: 1px solid #4CA1AF;
+    border-radius: 6px;
+    background-color: #2C3E50;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #20C997;
+    box-shadow: 0px 0px 6px rgba(32, 201, 151, 0.6);
+}
+
+/* Footer */
+footer {
+    background-color: #1B1B2F;
+    text-align: center;
+    padding: 20px;
+    color: #EAEAEA;
+    font-size: 16px;
+}
+
+footer a {
+    color: #20C997;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #contact {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
 }
