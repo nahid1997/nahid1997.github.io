@@ -1,20 +1,20 @@
 body {
-    background-colour: #f0f0f0;
-    colour: #333;
+    background-color: #f0f0f0;
+    color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-colour: #007bff;
+    background-color: #007bff;
     padding: 10px 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    colour: white;
+    color: white;
     text-decoration: none;
     padding: 12px 20px;
     font-size: 18px;
@@ -37,7 +37,7 @@ nav {
 }
 
 h1 {
-    colour: #333;
+    color: #333;
     font-size: 36px;
     text-align: center;
     margin-top: 20px;
@@ -54,8 +54,8 @@ a:hover {
 }
 
 button {
-    background-colour: #28a745;
-    colour: white;
+    background-color: #28a745;
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -63,18 +63,18 @@ button {
 }
 
 botton:hover {
-    background-colour: #218838;
+    background-color: #218838;
 }
 
 nav {
-    background-colour: #007bff;
+    background-color: #007bff;
     padding: 10px 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 body {
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    colour: white;
+    color: white;
 }
 
 @media (max-width: 600px) {
@@ -89,4 +89,48 @@ body {
     h1 {
         font-size: 28px;
     }
+}
+
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
